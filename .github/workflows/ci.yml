@@ -16,3 +16,12 @@ jobs:
         uses: ./.github/actions/setup-node
         with:
           node-version: '24'
+
+      - name: Run Greeting Action
+        id: greet
+        uses: ./.github/actions/greeting
+        with:
+          greetee: 'Elwood'
+
+      - name: Output Greeting
+        run: echo "${{ steps.greet.outputs.greeting }}"

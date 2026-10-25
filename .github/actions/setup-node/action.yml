@@ -20,3 +20,9 @@ runs:
         node -v
         echo "npm version:"
         npm -v
+
+    - name: Install dependencies
+      shell: bash
+      run: |
+        echo "Installing dependencies..."
+        npm ci
