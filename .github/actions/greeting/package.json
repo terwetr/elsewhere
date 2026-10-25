@@ -1,6 +1,7 @@
 {
   "name": "greeting",
   "version": "1.0.0",
+  "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "build": "ncc build ./src/index.js -o dist",
