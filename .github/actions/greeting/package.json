@@ -1,0 +1,15 @@
+{
+  "name": "greeting",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build ./src/index.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.45.0"
+  },
+  "dependencies": {
+    "@actions/core": "^3.0.1"
+  }
+}
